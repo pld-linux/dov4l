@@ -1,0 +1,21 @@
+diff -Nur dov4l-0.9.orig/Makefile dov4l-0.9.Makefile/Makefile
+--- dov4l-0.9.orig/Makefile	2006-01-09 08:35:16.000000000 +0000
++++ dov4l-0.9.Makefile/Makefile	2006-11-22 18:28:35.000000000 +0000
+@@ -1,14 +1,14 @@
+ VERSION=0.9
+ 
+-CFLAGS+=-O2 -Wall -DVERSION=\"$(VERSION)\" $(DEBUG)
+-LDFLAGS+=
++CFLAGS = -Wall $(OPTCFLAGS) -DVERSION=\"$(VERSION)\" $(DEBUG)
++LDFLAGS =
+ 
+ OBJS=dov4l.o
+ 
+ all: dov4l
+ 
+ dov4l: $(OBJS)
+-	$(CC) -Wall -W $(OBJS) $(LDFLAGS) -o dov4l
++	$(CC) -Wall -W $(CFLAGS) $(LDFLAGS) $(OBJS) -o dov4l
+ 
+ install: dov4l
+ 	cp dov4l /usr/bin
