@@ -1,5 +1,5 @@
-
 Summary:	Utility for setting V4L parameters
+Summary(pl):	Narzêdzia do ustawiania parametrów V4L
 Name:		dov4l
 Version:	0.9
 Release:	1
@@ -12,9 +12,15 @@ URL:		http://www.vanheusden.com/dov4l/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This console-tool sets parameters of a Video4Linux-device. You can set
-things like picturesize, brightness, contrast, tunerfrequency, etc.
+This console-tool sets parameters of a Video4Linux device. You can set
+things like picture size, brightness, contrast, tuner frequency, etc.
 etc. You can also retrieve a complete list of all current settings.
+
+%description -l pl
+To narzêdzie konsolowe ustawia parametry urz±dzenia Video4Linux.
+Pozwala ustawiæ parametry takie jak rozmiar obrazu, jasno¶æ, kontrast,
+czêstotliwo¶æ tunera itp. Mo¿na tak¿e odczytaæ pe³n± listê bie¿±cych
+ustawieñ.
 
 %prep
 %setup -q
