@@ -1,5 +1,5 @@
 Summary:	Utility for setting V4L parameters
-Summary(pl.UTF-8):   Narzędzia do ustawiania parametrów V4L
+Summary(pl.UTF-8):	Narzędzia do ustawiania parametrów V4L
 Name:		dov4l
 Version:	0.9
 Release:	1
